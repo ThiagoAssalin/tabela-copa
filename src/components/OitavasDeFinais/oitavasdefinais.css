@@ -1,0 +1,38 @@
+.oitavas{
+    
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.chaveOitavas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.chaveOitavas span{
+    margin: 5px;
+    background-color: yellow;
+    color: black;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.chaveOitavas input{
+    width: 2em;
+    margin: 2px;
+    text-align: center;
+    text-decoration:none;
+}
+.chaveOitavas input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

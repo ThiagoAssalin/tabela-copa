@@ -1,0 +1,32 @@
+.quartas{
+
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.quartas span{
+    margin: 1.7em;
+    background-color: yellow;
+    color: black;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+        
+
+}
+.quartas input{
+    width: 2em;
+    margin: 2px;
+    text-align: center;
+    text-decoration:none;
+}
+.quartas input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
