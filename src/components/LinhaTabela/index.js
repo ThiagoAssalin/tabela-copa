@@ -30,7 +30,10 @@ export default function LinhaTabela(props) {
         if(e.target.value<0){
             return
         }
-        setV(e.target.value)
+        setV(parseInt(e.target.value))
+        props.organizaLinha()
+        
+
     }
     function handlerE(e){
         if(e.target.value<0){
@@ -62,15 +65,15 @@ export default function LinhaTabela(props) {
  return (
    
     <tr>
-        <th>{props.grupo}</th>              
+        <th>{props.grupo.nome}</th>              
         <th><input type='number' value={pj} onChange={handlerPj}/></th>
-        <th><input type='number' value={v} onChange={handlerV}/></th>              
-        <th><input type='number' value={e} onChange={handlerE}/></th>              
-        <th><input type='number' value={d} onChange={handlerD}/></th>
-        <th><input type='number' value={gp} onChange={handlerGp}/></th>              
-        <th><input type='number' value={gc} onChange={handlerGc}/></th>
-        <th><input type='text' value={sg}/></th>              
-        <th><input type='text' value={pts}/></th>
+        <th><input type='number' value={props.grupo.v = v} onChange={handlerV}/></th>              
+        <th><input type='number' value={props.grupo.e = e} onChange={handlerE}/></th>              
+        <th><input type='number' value={props.grupo.d = d} onChange={handlerD}/></th>
+        <th><input type='number' value={props.grupo.gp = gp} onChange={handlerGp}/></th>              
+        <th><input type='number' value={props.grupo.gc = gc} onChange={handlerGc}/></th>
+        <th><input type='text' value={props.grupo.sg = sg}/></th>              
+        <th><input type='text' value={props.grupo.pts = pts}/></th>
     </tr>
    
  );

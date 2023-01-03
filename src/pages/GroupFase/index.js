@@ -1,15 +1,26 @@
 import React from 'react';
 import Tabela from '../../components/Tabela';
+import { UserContext } from '../../contexts/selecoes';
+import { useContext } from 'react';
+
 
 export default function GroupFase() {
-  var grupoA = ['QATAR','ECUADOR','SENEGAL','NOVA ZELÂNDIA']
-  var grupoB = ['INGLATERRA','IRAN','USA','GALES']
-  var grupoC = ['ARGENTINA','ARÁBIA SAUDITA','MÉXICO','POLÓNIA']
-  var grupoD = ['FRANÇA','AUSTRALIA','DINAMARCA','TUNISIA']
-  var grupoE = ['ESPANHA','COSTA RICA','ALEMANHA','JAPÃO']
-  var grupoF = ['BELIGICA','CANADA','MARROCOS','CROACIA']
-  var grupoG = ['BRASIL','SERVIA','SUÉCIA','CAMARÕES']
-  var grupoH = ['PORTUGAL','GHANA','URUGUAI','KOREA DO SUL']
+  const { brasil, qatar, ecuador, senegal, novaZelandia, inglaterra, iran , usa , gales , argentina , 
+  arabiaSaudita, mexico, polonia, franca, australia, dinamarca, tunisia, 
+espanha, costaRica, alemanha, japao, belgica, canada, marrocos, croacia,
+servia, suecia, camaroes, portugal, ghana, uruguai, koreaDoSul } = useContext(UserContext)
+  
+
+  var grupoA = [qatar, ecuador, senegal,novaZelandia]
+  var grupoB = [inglaterra , iran ,usa , gales]
+  var grupoC = [argentina,arabiaSaudita,mexico,polonia]
+  var grupoD = [franca,australia,dinamarca,tunisia]
+  var grupoE = [espanha,costaRica,alemanha,japao]
+  var grupoF = [belgica,canada,marrocos,croacia]
+  var grupoG = [brasil,servia,suecia,camaroes]
+  var grupoH = [portugal,ghana,uruguai,koreaDoSul]
+
+  
 
  return (
    <div>
